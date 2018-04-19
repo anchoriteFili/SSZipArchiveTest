@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51DAC175C2481714D916DC43 /* Pods_SSZipArchiveTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD3571A4C3E661DD782431D /* Pods_SSZipArchiveTest.framework */; };
 		D610FB05208722AB00B10836 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D610FB04208722AB00B10836 /* AppDelegate.m */; };
 		D610FB08208722AB00B10836 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D610FB07208722AB00B10836 /* ViewController.m */; };
 		D610FB0B208722AB00B10836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D610FB09208722AB00B10836 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		D610FB13208722AE00B10836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D610FB12208722AE00B10836 /* main.m */; };
 		D610FB1D208722AE00B10836 /* SSZipArchiveTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D610FB1C208722AE00B10836 /* SSZipArchiveTestTests.m */; };
 		D610FB28208722AE00B10836 /* SSZipArchiveTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D610FB27208722AE00B10836 /* SSZipArchiveTestUITests.m */; };
+		D610FB372087251C00B10836 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D610FB362087251C00B10836 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AD3571A4C3E661DD782431D /* Pods_SSZipArchiveTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSZipArchiveTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7C932303DAE6AB1F5379B8 /* Pods-SSZipArchiveTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSZipArchiveTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSZipArchiveTest/Pods-SSZipArchiveTest.release.xcconfig"; sourceTree = "<group>"; };
+		C09EA52CF75984CAE7E6A554 /* Pods-SSZipArchiveTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSZipArchiveTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSZipArchiveTest/Pods-SSZipArchiveTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D610FB00208722AB00B10836 /* SSZipArchiveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSZipArchiveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D610FB03208722AB00B10836 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D610FB04208722AB00B10836 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		D610FB23208722AE00B10836 /* SSZipArchiveTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSZipArchiveTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D610FB27208722AE00B10836 /* SSZipArchiveTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSZipArchiveTestUITests.m; sourceTree = "<group>"; };
 		D610FB29208722AE00B10836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D610FB362087251C00B10836 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D610FB372087251C00B10836 /* libz.tbd in Frameworks */,
+				51DAC175C2481714D916DC43 /* Pods_SSZipArchiveTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D970D222A5C4C996BBBC849 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C09EA52CF75984CAE7E6A554 /* Pods-SSZipArchiveTest.debug.xcconfig */,
+				BE7C932303DAE6AB1F5379B8 /* Pods-SSZipArchiveTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D610FAF7208722AB00B10836 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,8 @@
 				D610FB1B208722AE00B10836 /* SSZipArchiveTestTests */,
 				D610FB26208722AE00B10836 /* SSZipArchiveTestUITests */,
 				D610FB01208722AB00B10836 /* Products */,
+				D610FB352087251C00B10836 /* Frameworks */,
+				4D970D222A5C4C996BBBC849 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +151,15 @@
 			path = SSZipArchiveTestUITests;
 			sourceTree = "<group>";
 		};
+		D610FB352087251C00B10836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D610FB362087251C00B10836 /* libz.tbd */,
+				2AD3571A4C3E661DD782431D /* Pods_SSZipArchiveTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D610FB2C208722AE00B10836 /* Build configuration list for PBXNativeTarget "SSZipArchiveTest" */;
 			buildPhases = (
+				BD37282741F72A6F958F8D49 /* [CP] Check Pods Manifest.lock */,
 				D610FAFC208722AB00B10836 /* Sources */,
 				D610FAFD208722AB00B10836 /* Frameworks */,
 				D610FAFE208722AB00B10836 /* Resources */,
+				C94D25C93F2F8BC808F8799F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +286,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD37282741F72A6F958F8D49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSZipArchiveTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94D25C93F2F8BC808F8799F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SSZipArchiveTest/Pods-SSZipArchiveTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSZipArchiveTest/Pods-SSZipArchiveTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D610FAFC208722AB00B10836 /* Sources */ = {
@@ -431,15 +500,13 @@
 		};
 		D610FB2D208722AE00B10836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C09EA52CF75984CAE7E6A554 /* Pods-SSZipArchiveTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = SSZipArchiveTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.SSZipArchiveTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,15 +515,13 @@
 		};
 		D610FB2E208722AE00B10836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7C932303DAE6AB1F5379B8 /* Pods-SSZipArchiveTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = SSZipArchiveTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.SSZipArchiveTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,11 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = SSZipArchiveTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.SSZipArchiveTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = SSZipArchiveTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.SSZipArchiveTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,11 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = SSZipArchiveTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.SSZipArchiveTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,11 +578,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = SSZipArchiveTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.SSZipArchiveTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

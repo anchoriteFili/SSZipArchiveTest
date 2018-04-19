@@ -1,0 +1,6 @@
+target 'SSZipArchiveTest' do
+end
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'SSZipArchive', '2.1.1'
